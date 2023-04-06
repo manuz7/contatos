@@ -1,13 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>contato5</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">contato5</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://w0.peakpx.com/wallpaper/11/168/HD-wallpaper-spider-man-movie-zendaya-spider-man-far-from-home-michelle-mj-jones.jpg" />
+    <ion-card-header>
+      <ion-card-title>Michelle Jones-Watson</ion-card-title>
+      <ion-card-subtitle color="danger">Adolescente</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-chip color="danger">Endereço: Cidade de Nova York </ion-chip>
+    <ion-chip color="secondary">Telefone: 3504-1424  </ion-chip>
+    <ion-chip color="success">Gênero: Femnino</ion-chip>
+    <ion-chip color="success">Altura: 1,78m </ion-chip>
+    <ion-chip color="success">Peso: 59 Kg  </ion-chip>
+    <ion-chip color="secondary">Ocupações: Aluna
+
+      Barista, Na loja de Donuts e Confeitaria Pater Pan
+
+       </ion-chip>
+
+  </ion-card>
+
+  <!--fotos-->
+
+
+
+
+  <ion-button color="tertiary" id="hover-trigger">Fotos</ion-button>
+  <ion-popover trigger="hover-trigger" triggerAction="hover">
+    <ng-template>
+      <img src="https://i.pinimg.com/originals/44/52/fb/4452fb12bbbc4e86f33066bfa867b868.jpg" alt="">
+    </ng-template>
+  </ion-popover>
+  <ion-popover trigger="hover-trigger" triggerAction="hover">
+    <ng-template>
+      <img src="https://i.pinimg.com/236x/19/c6/ae/19c6aed7534818ee44b4249ce519bd99.jpg" alt="">
+    </ng-template>
+  </ion-popover>
+
+  <a href="/home" >
+    <ion-button color="tertiary">
+      Voltar
+    </ion-button></a>
 </ion-content>

@@ -1,13 +1,45 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>contato4</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">contato4</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://s.aficionados.com.br/imagens/viuva-negra-marvel-revela-significado-do-nome-da-heroina_f.jpg" />
+    <ion-card-header>
+      <ion-card-title>Natasha Romanoff</ion-card-title>
+      <ion-card-subtitle color="danger">Adulta</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-chip color="danger">Endereço: Volgogrado, Rússia  </ion-chip>
+    <ion-chip color="secondary">Telefone: 2463-5974</ion-chip>
+    <ion-chip color="success">Gênero: Feminino </ion-chip>
+    <ion-chip color="success">Altura: 1,60 </ion-chip>
+    <ion-chip color="success">Peso: 55 kg </ion-chip>
+    <ion-chip color="secondary">Ocupações: Espiã e Ex - Agente Secreta da S.H.I.E.L.D.</ion-chip>
+
+  </ion-card>
+
+  <!--fotos-->
+
+
+
+
+  <ion-button color="warning" id="hover-trigger">Fotos</ion-button>
+  <ion-popover trigger="hover-trigger" triggerAction="hover">
+    <ng-template>
+      <img src="https://disneyplusbrasil.com.br/wp-content/uploads/2021/05/Natasha-Romanoff-717x1024.jpg" alt="">
+    </ng-template>
+  </ion-popover>
+  <ion-popover trigger="hover-trigger" triggerAction="hover">
+    <ng-template>
+      <img src="https://s.aficionados.com.br/imagens/viuva-negra2.jpg" alt="">
+    </ng-template>
+  </ion-popover>
+
+  <a href="/home" >
+    <ion-button color="warning">
+      Voltar
+    </ion-button></a>
 </ion-content>
